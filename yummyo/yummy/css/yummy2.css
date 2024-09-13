@@ -1,0 +1,285 @@
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .slide img {
+      width: 300px;
+      height: 500px;
+      margin-top: 40px;
+    }
+    header {
+      background-color: #4f302e;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 10vh;
+  }
+  .logo-container img{
+      width: 200px;
+      height: 100px; 
+      margin-top: -1vh;
+  }
+  article > nav > a{
+      text-decoration: none;
+      padding: 0 15px;
+      font-size: 15px;
+      margin-left: 0;
+      color: white;
+  }
+  .Dragon{
+    grid-area: dragon;
+    width: 300px;
+    height: 200px;
+  }
+  .welkom{
+    grid-area: welkom;
+    margin-top: 40px;
+  }
+  .reserveer{
+    grid-area: reserveer;
+  }
+  .ontdek{
+    grid-area: ontdek;
+    margin-top: 40px;
+  }
+  .slideshow-container {
+    grid-area: slideshow;
+  }
+  .food {
+    grid-area: food;
+    width: 50vw;
+    height: 100vh;
+  }
+  .best {
+    grid-area: best;
+    margin-left: 60px;
+    width: 40vw;
+  }
+  .chinese{
+    grid-area: chinese;
+    margin-left: 60px;
+    width: 40vw;
+  }
+  .foto1{
+    grid-area: foto1;
+    height: 65vh;
+    width:24.7vw;
+  }
+  .foto2{
+    grid-area: foto2;
+    height: 35vh;
+    width: 24.7vw;
+  }
+  .foto3{
+    grid-area: foto3;
+    height: 65vh;
+    width:24.7vw;
+  }
+  .foto4{
+    grid-area: foto4;
+    height: 35vh;
+    width:24.7vw;
+  }
+  .foto5{
+    grid-area: foto5;
+    height: 35vh;
+    width:24.7vw;
+  }
+  .foto6{
+    grid-area: foto6;
+    height: 65vh;
+    width:24.7vw;
+  }
+  .foto7{
+    grid-area: foto7;
+    height: 35vh;
+    width:24.7vw;
+  }
+  .foto8{    
+    grid-area: foto8;
+    height: 65vh;
+    width:24.7vw;
+  }
+  .main1{
+    margin-left: 10%;
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "slideshow . . welkom ontdek"
+    "slideshow . . reserveer dragon";
+  }
+  .main3{
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "food . best"
+    "food . chinese"
+    "food . chinese";
+  }
+  .main4{
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "foto1 foto2 foto3 foto4"
+    "foto1 foto6 foto3 foto8"  
+    "foto5 foto6 foto7 foto8" ;
+  }
+  footer{
+    margin: 0;
+    padding: 0;
+    height: 17vh;
+    background: #4f302e;
+    margin-bottom: 0;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:ital,wght@1,100;1,200&display=swap');
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0vh;
+    margin-left: 0vh;
+  }
+  .footertext {
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-left: 5vh; 
+    color: rgb(255, 255, 255);
+    margin-right: 5vh; 
+  }
+  .footertext2 {
+    text-decoration: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-left: 5vh; 
+    color: rgb(238, 235, 235);
+  }
+  .flex-container > article > h1 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .FOOT-img {
+    height: 5vh;
+    padding: 5vh;
+    width: 5vh;
+  margin-top: -1vh;
+  }
+  .Privacy{
+    text-decoration: none;
+    color: black;
+  }
+/* Media for Privacy */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+}
+  .main2{
+    height: 360vh;
+  }
+  @media screen and (max-width: 768px) {
+    .slide img {
+        width: 100%; 
+        height: auto;
+        margin-top: 20px; 
+    }
+    header {
+        flex-direction: column; 
+        height: auto;
+        padding: 20px; 
+    }
+    .logo-container img {
+        width: 150px; 
+        height: auto;
+        margin-top: 10px; 
+    }
+    article > nav > a {
+        padding: 10px; 
+        font-size: 12px; 
+        margin: 5px; 
+    }
+    .welkom,
+    .ontdek {
+        margin-top: 20px; 
+    }
+    .slideshow-container {
+        width: 100%; 
+    }
+    .main1 {
+        margin: 10px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column; 
+    }
+    footer {
+        height: auto;
+        padding: 10px; 
+    }
+    .flex-container {
+        flex-direction: column; 
+    }
+    .footertext,
+    .footertext2 {
+        font-size: 10px; 
+        margin: 5px; 
+    }
+    .FOOT-img {
+        height: 30px;
+        width: 30px;
+        margin-top: 5px; 
+    }
+    .main2 {
+        height: auto;
+    }
+    .menu {
+      width: 100%;
+    }
+}
+/* css voor reserveer en confirm*/
+.reserveer1 {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+form {
+  display: grid;
+  gap: 10px;
+}
+label {
+  font-weight: bold;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+input[type="submit"] {
+  background-color: #4f302e;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #3d241f;
+}
+.reservering-voltooid {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+/* Media voor reserveer */
+@media screen and (max-width: 768px) {
+  .reservering-voltooid {
+      margin: 10px;
+      padding: 10px;
+  }
+}
